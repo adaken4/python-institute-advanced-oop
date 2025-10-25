@@ -33,6 +33,10 @@ duck = Duck(25, 3.6, "female")
 duckling = Duck(height=10, weight=3.4, sex="male")
 hen = Duck(20, 3.4, sex="female")
 
+# An attribute refers to two major kinds of class traits:
+# - variables: holding data about the class or an instance
+# - methods: represent a behavior
+
 # Method invocation
 duck.quack()
 
