@@ -44,3 +44,18 @@ duck.quack()
 print(f"Duck's weight: {duck.weight} kg")
 
 print(duck)
+
+# A type is the foremost 'type' that any class can be inherited
+# from.
+
+print(Duck.__class__, type(Duck))
+
+# In all other cases, it refers to the class that was used to
+# instantiate the object.
+
+print(duckling.__class__) # can be changed
+print(type(hen.height)) # more reliable, always returns the class
+print(duck.quack.__class__)
+
+# Python comes with a number of built-in types, like numbers,
+# strings, lists, etc., that are used to build more complex types.
