@@ -22,10 +22,16 @@ class Duck:
         return print('Quack')
     
     def __str__(self):
-        return f"Duck({self.sex}, {self.height}m, {self.weight}kg)"
+        return f"Duck({self.sex}, {self.height}cm, {self.weight}kg)"
+
+# An instance is one particular physical instantiation
+# of a class that occupies memory and has data elements.
+# Each instance has its own individual state.
 
 # Object instantiation    
-duck = Duck(0.25, 3.6, "female")
+duck = Duck(25, 3.6, "female")
+duckling = Duck(height=10, weight=3.4, sex="male")
+hen = Duck(20, 3.4, sex="female")
 
 # Method invocation
 duck.quack()
